@@ -1,0 +1,20 @@
+{
+    "tipo": "Plantilla documental no ejecutable; PHP no carga este archivo",
+    "raiz": "<ruta-absoluta-real-de-EV02>",
+    "http": {
+        "host": "127.0.0.1",
+        "puerto": 18088
+    },
+    "base": {
+        "motor": "MariaDB",
+        "versionHistorica": "11.4.13",
+        "host": "127.0.0.1",
+        "puerto": 13348,
+        "nombreFijoEnCodigo": "don_pan_ga8_ev01_pruebas",
+        "usuarioFijoEnCodigo": "ga8_app@127.0.0.1",
+        "datadirRelativo": ".runtime/mariadb/data",
+        "clave": "<generar fuera del código; no almacenar aquí>",
+        "variableEfimera": "GA8_DB_PASSWORD"
+    },
+    "estado": "EV02 sin aprovisionar; comprobar aislamiento antes de cualquier escritura"
+}

@@ -1,0 +1,10 @@
+PHPUnit 11.5.57 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.2.12
+Configuration: C:\SENA\don-pan-ga8-aa1-ev01-lab\phpunit.xml
+
+.....................................                             37 / 37 (100%)
+
+Time: 00:00.003, Memory: 26.00 MB
+
+OK (37 tests, 37 assertions)

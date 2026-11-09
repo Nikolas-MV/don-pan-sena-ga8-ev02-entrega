@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\SENA\don-pan-ga8-aa1-ev01-lab\phpunit.xml" tests="37" assertions="37" errors="0" failures="0" skipped="0" time="0.004041">
+    <testsuite name="unitarias" tests="37" assertions="37" errors="0" failures="0" skipped="0" time="0.004041">
+      <testsuite name="AutorizacionTest" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\AutorizacionTest.php" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.000528">
+        <testsuite name="AutorizacionTest::testPoliticaDeRol" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.000528">
+          <testcase name="testPoliticaDeRol with data set &quot;ausente&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\AutorizacionTest.php" line="23" class="AutorizacionTest" classname="AutorizacionTest" assertions="1" time="0.000141"/>
+          <testcase name="testPoliticaDeRol with data set &quot;empleada&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\AutorizacionTest.php" line="23" class="AutorizacionTest" classname="AutorizacionTest" assertions="1" time="0.000089"/>
+          <testcase name="testPoliticaDeRol with data set &quot;desconocido&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\AutorizacionTest.php" line="23" class="AutorizacionTest" classname="AutorizacionTest" assertions="1" time="0.000079"/>
+          <testcase name="testPoliticaDeRol with data set &quot;rol ausente&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\AutorizacionTest.php" line="23" class="AutorizacionTest" classname="AutorizacionTest" assertions="1" time="0.000083"/>
+          <testcase name="testPoliticaDeRol with data set &quot;dueno sin empleado&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\AutorizacionTest.php" line="23" class="AutorizacionTest" classname="AutorizacionTest" assertions="1" time="0.000066"/>
+          <testcase name="testPoliticaDeRol with data set &quot;dueno&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\AutorizacionTest.php" line="23" class="AutorizacionTest" classname="AutorizacionTest" assertions="1" time="0.000070"/>
+        </testsuite>
+      </testsuite>
+      <testsuite name="CsrfTest" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" tests="11" assertions="11" errors="0" failures="0" skipped="0" time="0.001811">
+        <testsuite name="CsrfTest::testComparacion" tests="11" assertions="11" errors="0" failures="0" skipped="0" time="0.001811">
+          <testcase name="testComparacion with data set &quot;coinciden&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.001026"/>
+          <testcase name="testComparacion with data set &quot;diferentes&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000097"/>
+          <testcase name="testComparacion with data set &quot;ambos vacios&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000086"/>
+          <testcase name="testComparacion with data set &quot;esperado vacio&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000085"/>
+          <testcase name="testComparacion with data set &quot;recibido vacio&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000089"/>
+          <testcase name="testComparacion with data set &quot;ausente&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000095"/>
+          <testcase name="testComparacion with data set &quot;falta recibido&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000087"/>
+          <testcase name="testComparacion with data set &quot;array recibido&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000068"/>
+          <testcase name="testComparacion with data set &quot;array esperado&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000062"/>
+          <testcase name="testComparacion with data set &quot;numero&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000061"/>
+          <testcase name="testComparacion with data set &quot;booleano&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\CsrfTest.php" line="29" class="CsrfTest" classname="CsrfTest" assertions="1" time="0.000056"/>
+        </testsuite>
+      </testsuite>
+      <testsuite name="ReglasVentaTest" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" tests="20" assertions="20" errors="0" failures="0" skipped="0" time="0.001701">
+        <testsuite name="ReglasVentaTest::testRechazaCantidadInvalida" tests="10" assertions="10" errors="0" failures="0" skipped="0" time="0.001064">
+          <testcase name="testRechazaCantidadInvalida with data set &quot;cero&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000124"/>
+          <testcase name="testRechazaCantidadInvalida with data set &quot;negativa&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000068"/>
+          <testcase name="testRechazaCantidadInvalida with data set &quot;fraccion&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000067"/>
+          <testcase name="testRechazaCantidadInvalida with data set &quot;texto fraccion&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000066"/>
+          <testcase name="testRechazaCantidadInvalida with data set &quot;no numerica&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000075"/>
+          <testcase name="testRechazaCantidadInvalida with data set &quot;array&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000067"/>
+          <testcase name="testRechazaCantidadInvalida with data set &quot;booleano&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000062"/>
+          <testcase name="testRechazaCantidadInvalida with data set &quot;null&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000061"/>
+          <testcase name="testRechazaCantidadInvalida with data set &quot;exceso&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000404"/>
+          <testcase name="testRechazaCantidadInvalida with data set &quot;vacia&quot;" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="21" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000070"/>
+        </testsuite>
+        <testcase name="testAceptaEnteroDeFormulario" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="27" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000070"/>
+        <testcase name="testPermiteAgotarExactamenteElStock" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="32" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000060"/>
+        <testcase name="testRechazaInexistente" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="37" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000058"/>
+        <testcase name="testRechazaInactivo" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="43" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000054"/>
+        <testcase name="testRechazaStockInsuficiente" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="49" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000056"/>
+        <testcase name="testOmiteSoloCasillasSinSeleccion" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="55" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000062"/>
+        <testcase name="testNoOcultaCantidadesNegativas" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="60" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000058"/>
+        <testcase name="testRechazaContenedorInvalido" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="66" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000108"/>
+        <testcase name="testRechazaIdentificadorInvalido" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="72" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000057"/>
+        <testcase name="testLimiteEnteroValido" file="C:\SENA\don-pan-ga8-aa1-ev01-lab\tests\Unit\ReglasVentaTest.php" line="78" class="ReglasVentaTest" classname="ReglasVentaTest" assertions="1" time="0.000054"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

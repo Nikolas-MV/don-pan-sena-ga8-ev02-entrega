@@ -1,0 +1,255 @@
+{
+    "fechaUtc": "2026-11-08T18:36:20.613Z",
+    "herramienta": "Node.js fetch y cliente MariaDB local; no PHPUnit ni Postman",
+    "integracion": [
+        {
+            "id": "I1",
+            "objetivo": "Entrada y movimiento",
+            "esperado": "Stock 10 a 15 y movimiento de 5",
+            "obtenido": {
+                "stock": 15,
+                "movimiento": 5
+            },
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:19.119Z"
+        },
+        {
+            "id": "I2",
+            "objetivo": "Venta transaccional",
+            "esperado": "Stock 13, total 2501 y detalle 2",
+            "obtenido": {
+                "stock": 13,
+                "total": 2501,
+                "venta": 7
+            },
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:19.402Z"
+        },
+        {
+            "id": "I3",
+            "objetivo": "Rollback por stock insuficiente",
+            "esperado": "Sin cambios parciales tras procesar una primera linea valida",
+            "obtenido": {
+                "stock": 13,
+                "ventas": 3,
+                "detalles": 3,
+                "movimientos": 8
+            },
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:19.699Z"
+        },
+        {
+            "id": "I4",
+            "objetivo": "Producto inactivo",
+            "esperado": "Rechazo servidor y datos intactos",
+            "obtenido": "Rechazado",
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:19.847Z"
+        },
+        {
+            "id": "I7",
+            "objetivo": "Restriccion por rol",
+            "esperado": "Empleada rechazada; venta vigente y stock 13",
+            "obtenido": {
+                "http": 302,
+                "stock": 13
+            },
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:19.964Z"
+        },
+        {
+            "id": "I8",
+            "objetivo": "CSRF ausente y falso",
+            "esperado": "403 y ninguna escritura",
+            "obtenido": {
+                "subcasos": 2,
+                "http": 403
+            },
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:20.081Z"
+        },
+        {
+            "id": "I5",
+            "objetivo": "Anulacion por dueno",
+            "esperado": "Stock 15, marca, responsable y fecha",
+            "obtenido": {
+                "stock": 15,
+                "auditoria": true
+            },
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:20.401Z"
+        },
+        {
+            "id": "I6",
+            "objetivo": "Anulacion duplicada",
+            "esperado": "Sin segunda restitucion",
+            "obtenido": {
+                "stock": 15,
+                "rechazo": true
+            },
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:20.535Z"
+        },
+        {
+            "id": "I9",
+            "objetivo": "Indicadores de ventas vigentes",
+            "esperado": "Incrementan al vender y vuelven a base tras anular",
+            "obtenido": {
+                "antes": 0,
+                "durante": 1,
+                "despues": 0,
+                "totalDurante": "$2.501"
+            },
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:20.587Z"
+        },
+        {
+            "id": "I10",
+            "objetivo": "Catalogo autenticado y activo",
+            "esperado": "Activos visibles, inactivo excluido, sin sesion 401",
+            "obtenido": {
+                "activo": true,
+                "inactivoExcluido": true,
+                "sinSesion": 401
+            },
+            "estado": "APROBADA",
+            "fechaUtc": "2026-11-08T18:36:20.609Z"
+        }
+    ],
+    "solicitudes": [
+        {
+            "metodo": "GET",
+            "ruta": "/api/session.php",
+            "http": 200
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/login_action.php",
+            "http": 302
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/api/session.php",
+            "http": 200
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/api/session.php",
+            "http": 200
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/login_action.php",
+            "http": 302
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/api/session.php",
+            "http": 200
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/api/resumen.php",
+            "http": 200
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/inventario_action.php",
+            "http": 302
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/venta_action.php",
+            "http": 302
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/venta_action.php",
+            "http": 302
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/venta_action.php",
+            "http": 302
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/anular_venta_action.php",
+            "http": 302
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/inventario_action.php",
+            "http": 403
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/inventario_action.php",
+            "http": 403
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/api/resumen.php",
+            "http": 200
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/anular_venta_action.php",
+            "http": 302
+        },
+        {
+            "metodo": "POST",
+            "ruta": "/actions/anular_venta_action.php",
+            "http": 302
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/api/resumen.php",
+            "http": 200
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/public/dashboard.php",
+            "http": 200
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/public/reportes.php",
+            "http": 200
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/api/productos.php",
+            "http": 200
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/api/productos.php",
+            "http": 401
+        },
+        {
+            "metodo": "GET",
+            "ruta": "/.runtime/seguridad/admin.dpapi",
+            "http": 404
+        }
+    ],
+    "aislamiento": {
+        "port": 13348,
+        "http": 18088,
+        "datadirRelativo": ".runtime/mariadb/data",
+        "base": "don_pan_ga8_ev01_pruebas",
+        "usuarioAplicacion": "ga8_app@127.0.0.1",
+        "privilegios": [
+            "SELECT",
+            "INSERT",
+            "UPDATE"
+        ],
+        "version": "11.4.13-MariaDB"
+    },
+    "credencialesEnReporte": false,
+    "persistencia": "Datos ficticios conservados; no se borra ni reinicializa",
+    "limitaciones": [
+        "No demuestra capturas visuales ni pruebas de concurrencia.",
+        "Redireccion por rol mantiene Location relativo heredado."
+    ]
+}

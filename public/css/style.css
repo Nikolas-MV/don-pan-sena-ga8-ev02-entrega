@@ -1,0 +1,303 @@
+:root {
+    /* Paleta documentada en docs/componentes-front-end.md
+       (evidencia GA6-220501096-AA4-EV02) */
+    --color-pan: #8B4513;      /* marrón: botones, menús, encabezados */
+    --color-naranja: #FF9800;  /* naranja: acciones, enlaces, alertas */
+    --color-crema: #F5F0E1;    /* crema: fondo de pantalla */
+    --color-blanco: #FFFFFF;
+    --color-texto: #3a2c1a;
+    --color-alerta: #D32F2F;   /* rojo: peligro, errores */
+    --color-ok: #4CAF50;       /* verde: éxitos, confirmaciones */
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--color-crema);
+    color: var(--color-texto);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-pan);
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.topbar nav a {
+    color: white;
+    margin-left: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.topbar nav a:hover { text-decoration: underline; }
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.brand img {
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    border: 2px solid rgba(255,255,255,0.6);
+    background: var(--color-crema);
+}
+
+.brand-text em {
+    font-style: normal;
+    color: #ffe0b2;
+    font-weight: 800;
+}
+
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.login-box {
+    max-width: 360px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.login-box form { display: flex; flex-direction: column; gap: 0.6rem; }
+
+input, button {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background: var(--color-pan);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover { opacity: 0.9; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.7rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th { background: #f0e4d3; }
+
+.fila-alerta { background: #fdecea; }
+
+.tarjetas { display: flex; gap: 1rem; margin-bottom: 2rem; }
+
+.tarjeta {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.tarjeta h2 { margin: 0; color: var(--color-pan); font-size: 2rem; }
+
+.alert-error { color: var(--color-alerta); font-weight: 600; }
+.alert-ok { color: var(--color-ok); font-weight: 600; }
+
+.form-inline { display: flex; gap: 0.4rem; }
+.form-inline input { width: 70px; }
+
+.nuevo-producto {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.nuevo-producto h2 { margin: 0 0 0.8rem; font-size: 1.1rem; color: var(--color-pan); }
+
+.form-nuevo { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.form-nuevo input { flex: 1; min-width: 120px; }
+.form-nuevo button { min-width: 100px; }
+
+/* ===== SELECT (categoría y método de pago) ===== */
+.form-nuevo select,
+.buscador select {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background: white;
+}
+
+/* ===== BUSCADOR ===== */
+.buscador {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.buscador input { flex: 1; }
+
+.buscador button { min-width: 110px; }
+
+/* ===== EDICIÓN EN LÍNEA DE PRODUCTOS ===== */
+.form-editar {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.form-editar input { width: 80px; padding: 0.35rem; }
+.form-editar button { padding: 0.35rem 0.7rem; font-size: 0.85rem; }
+
+/* ===== ACCESOS RÁPIDOS (Dashboard) ===== */
+.accesos-rapidos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.btn-secundario {
+    background: var(--color-naranja);
+    color: white;
+    padding: 0.7rem 1.1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-secundario:hover { opacity: 0.9; }
+
+/* ===== ALERTA DE ADVERTENCIA ===== */
+.alert-warn {
+    background: #fff8e1;
+    border-left: 4px solid var(--color-naranja);
+    color: #e65100;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* ===== BOTON DE PELIGRO (anular venta) ===== */
+.btn-peligro {
+    background: var(--color-alerta);
+    color: white;
+    padding: 0.35rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.btn-peligro:hover { opacity: 0.9; }
+
+/* ===== VENTA ANULADA ===== */
+.fila-anulada td {
+    opacity: 0.55;
+    text-decoration: line-through;
+}
+
+.txt-suave { color: #999; }
+
+/* ===== TOTAL EN VIVO (Ventas) ===== */
+.total-venta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    font-size: 1.2rem;
+}
+
+.total-venta strong { color: var(--color-pan); }
+
+.subtotal { font-weight: 600; color: var(--color-ok); }
+
+/* Fila con una cantidad que supera el stock */
+.fila-error {
+    background: #fdecea;
+    outline: 2px solid var(--color-alerta);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ===== MOVIMIENTOS DE INSUMOS ===== */
+.tag-entrada {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.tag-salida {
+    background: #fdecea;
+    color: #c62828;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #6b3410;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.6rem;
+    }
+
+    .topbar nav a { margin: 0 0.5rem; }
+
+    .tarjetas { flex-wrap: wrap; }
+
+    .buscador { flex-wrap: wrap; }
+    .buscador input { min-width: 100%; }
+}

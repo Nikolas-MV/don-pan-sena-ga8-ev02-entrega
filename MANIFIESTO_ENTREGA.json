@@ -1,0 +1,486 @@
+{
+    "evidencia": "GA8-220501096-AA1-EV02",
+    "version": "Revisión de redacción y presentación",
+    "carpetaRaiz": "GA8-220501096-AA1-EV02",
+    "archivosContenido": 76,
+    "archivosPaquete": 78,
+    "documentos": [
+        {
+            "nombre": "DOCUMENTO_TECNICO_EV02_REVISADO",
+            "tablasEditables": 16,
+            "CalibriPuntos": [
+                12,
+                13,
+                14
+            ],
+            "numeracionManual": true,
+            "proteccionEdicion": false,
+            "contenidoCoincidente": 439,
+            "partesCRCWord": 7,
+            "revisionVisualWord": "Pendiente de apertura en Word; estructura OOXML y XML verificadas.",
+            "pdf": {
+                "ruta": "docs/DOCUMENTO_TECNICO_EV02_REVISADO.pdf",
+                "paginas": 14,
+                "bytes": 246892,
+                "sha256": "bf74ef2554a541ef05a973de3856700e6c779fbcd01588e25f5b722b7f1b77a0",
+                "aperturaYRenderizadoCompleto": true,
+                "tablasRevisadas": true
+            },
+            "docx": {
+                "ruta": "docs/DOCUMENTO_TECNICO_EV02_REVISADO.docx",
+                "bytes": 15708,
+                "sha256": "ef95c4049cd36001b0840cec450483a3a1fb6f8633f02b3637ddd7575549a14a",
+                "XMLValido": true
+            }
+        },
+        {
+            "nombre": "ACTA_PRUEBAS_ACEPTACION_EV02_REVISADO",
+            "tablasEditables": 5,
+            "CalibriPuntos": [
+                12,
+                13,
+                14
+            ],
+            "numeracionManual": true,
+            "proteccionEdicion": false,
+            "contenidoCoincidente": 115,
+            "partesCRCWord": 7,
+            "revisionVisualWord": "Pendiente de apertura en Word; estructura OOXML y XML verificadas.",
+            "pdf": {
+                "ruta": "docs/ACTA_PRUEBAS_ACEPTACION_EV02_REVISADO.pdf",
+                "paginas": 4,
+                "bytes": 91940,
+                "sha256": "6de0ea8693f9435285e9739bf978733beff618aff1dd776da058d53ee8680e53",
+                "aperturaYRenderizadoCompleto": true,
+                "tablasRevisadas": true
+            },
+            "docx": {
+                "ruta": "docs/ACTA_PRUEBAS_ACEPTACION_EV02_REVISADO.docx",
+                "bytes": 5769,
+                "sha256": "94ab995b52604a8b2e0c3cb8c0b65279bb054fe49a889c182e0ad9aa7f8fc9b0",
+                "XMLValido": true
+            }
+        }
+    ],
+    "resultados": {
+        "pruebasUnitarias": 37,
+        "aserciones": 37,
+        "fallos": 0,
+        "errores": 0,
+        "casosIntegracionAprobados": 10,
+        "solicitudesHTTP": 23,
+        "nuevaEjecucion": false
+    },
+    "markdownModificados": [
+        "README.md",
+        "docs/MODULOS.md",
+        "docs/MANUAL_TECNICO.md",
+        "docs/AMBIENTE_DESARROLLO_PRUEBAS.md",
+        "docs/CONTROL_VERSIONES.md",
+        "docs/CRITERIOS_Y_PENDIENTES.md"
+    ],
+    "conservacion": "Código, pruebas, registros de resultados y capturas conservados. Originales Word/PDF y paquetes anteriores disponibles fuera del nuevo paquete.",
+    "verificacion": "Rutas, tamaños, SHA-256 y CRC comparados con la carpeta. El inventario SHA-256 incluye este manifiesto.",
+    "exclusiones": [
+        "Documentos Word/PDF anteriores, conservados en laboratorio y entrega anterior",
+        "Informes JSON anteriores, conservados sin editar; se incluye VERIFICACION_REVISION.json",
+        "Documentos retirados intencionalmente",
+        "AGENTS.md",
+        ".git",
+        ".runtime",
+        ".preparacion",
+        ".revision-editorial",
+        "bases, credenciales, sesiones, herramientas y temporales"
+    ],
+    "pendientes": [
+        "Abrir los DOCX en Word y comprobar su paginación.",
+        "Añadir portada personalizada si corresponde.",
+        "Revisión y aceptación formal del acta.",
+        "Definir entrega por Git y acceso del evaluador.",
+        "Preparar ambiente EV02 y adaptar ejecutor solo con autorización adicional.",
+        "Cotejar el instrumento oficial completo; acta de requerimientos y URL pública si son exigidas."
+    ],
+    "archivos": [
+        {
+            "ruta": ".editorconfig",
+            "bytes": 115,
+            "sha256": "f692c8dd1ee37cde0480924193a8fbd1d412fd27446ac9bed61c7b83fb81da6d"
+        },
+        {
+            "ruta": ".gitattributes",
+            "bytes": 117,
+            "sha256": "8097cc122307ab39a2952d06f74c5645ff4a165b50dad6f320b5848edf11a2e6"
+        },
+        {
+            "ruta": ".gitignore",
+            "bytes": 485,
+            "sha256": "bfb71e9f48f6cccc2ba30c946921149e8696b07606914510b0ae829025b135ae"
+        },
+        {
+            "ruta": "README.md",
+            "bytes": 3026,
+            "sha256": "56744b4724b87550d09f0f70ffb4b794b2ade96d41ce19cfc163a6a0c8278e11"
+        },
+        {
+            "ruta": "actions/anular_compra_action.php",
+            "bytes": 2979,
+            "sha256": "765d8fc17c997fa51fd33d461f97b27aca52f863c9c6e69b3b74b1ec57dc2f99"
+        },
+        {
+            "ruta": "actions/anular_venta_action.php",
+            "bytes": 2729,
+            "sha256": "5d6e3e264370a470304b0a6898f64ff64bc1e440ace7d3dd657b05362843876c"
+        },
+        {
+            "ruta": "actions/cliente_action.php",
+            "bytes": 1574,
+            "sha256": "6fe0ad5778a7b002757352ab5e1552b79b28fc33f3ee4b2587e35116a1898ab7"
+        },
+        {
+            "ruta": "actions/cliente_estado_action.php",
+            "bytes": 1017,
+            "sha256": "962ebde92ef44675e5f5c7e6cfb26a57b89fd54330e9b46ddebf8170253152b6"
+        },
+        {
+            "ruta": "actions/compra_action.php",
+            "bytes": 3017,
+            "sha256": "8a9a9bf46bd4baf6ca312aaeb9e077e8813f25b8563a1d8321f218b2be831530"
+        },
+        {
+            "ruta": "actions/inventario_action.php",
+            "bytes": 1229,
+            "sha256": "a9b238211b04a5a3e0b32151ced6f9b11e8ccb8a431e63fbc09507f9cc4d4257"
+        },
+        {
+            "ruta": "actions/login_action.php",
+            "bytes": 1444,
+            "sha256": "665ef96cf0a52ce344f6164b10849ee31fe3b135c4f4df647d26f9fa69e9bfdc"
+        },
+        {
+            "ruta": "actions/producto_action.php",
+            "bytes": 1751,
+            "sha256": "78bbac72d6801044bd27fc3cd6941512c1b284fb32c543c0893627f2be843cdb"
+        },
+        {
+            "ruta": "actions/producto_editar_action.php",
+            "bytes": 993,
+            "sha256": "56c3e54b2953146e8f7c81b5b83b91330a8ece8725db8d05cacb46ebc88bb95b"
+        },
+        {
+            "ruta": "actions/producto_estado_action.php",
+            "bytes": 1029,
+            "sha256": "4c90ee888aea30ee0768e2281cccf3c3026c2924a9e4fb4a5bc874b8b7ed3090"
+        },
+        {
+            "ruta": "actions/receta_action.php",
+            "bytes": 1971,
+            "sha256": "facf7c25e7bf71be7fdc3080872b9ef5bddf532c09e94a748c55b43113fd8e4d"
+        },
+        {
+            "ruta": "actions/venta_action.php",
+            "bytes": 3362,
+            "sha256": "bab0e8e6adba2769ca310f314f7dd45335555da2530468d55af8083a853e2101"
+        },
+        {
+            "ruta": "api/bootstrap.php",
+            "bytes": 3584,
+            "sha256": "83ef742dc7134f0fa9c43a3c31a54d73caf1b9dbd155d185c836e95dbedd6841"
+        },
+        {
+            "ruta": "api/login.php",
+            "bytes": 2830,
+            "sha256": "80877814badf0e3163537a826dbe8aef1dcf8f41f4f7adeeb0d7a44eb7099c51"
+        },
+        {
+            "ruta": "api/logout.php",
+            "bytes": 603,
+            "sha256": "2c1e54635708c5ce68195da9844c4cc865d8580613f2ff7327cbd2aef14a02c3"
+        },
+        {
+            "ruta": "api/productos.php",
+            "bytes": 1345,
+            "sha256": "71b6b994d1febbb16c42e8c9659904779006901ac21571aaf5761dff70990f4d"
+        },
+        {
+            "ruta": "api/resumen.php",
+            "bytes": 1191,
+            "sha256": "a48b6160f5282cf99d912bc75b3ef0448ef4fd245ef1bda359a9f0c974f757c4"
+        },
+        {
+            "ruta": "api/session.php",
+            "bytes": 580,
+            "sha256": "4ef9ed43bfab71202f27a7a90f2283e3c9fc5bd7e635c4abccb4fc4723dc2e67"
+        },
+        {
+            "ruta": "config/CONFIGURACION_EJEMPLO.json",
+            "bytes": 706,
+            "sha256": "f037b8596e756810d758d3aae30372fab5ad4aaa6d7c70ce089d5452b61f04d9"
+        },
+        {
+            "ruta": "config/db.php",
+            "bytes": 1599,
+            "sha256": "a325e083141b41e64b6f024c4686ab0824f11c98d7b24391f4a309143868b251"
+        },
+        {
+            "ruta": "docs/ACTA_PRUEBAS_ACEPTACION_EV02_REVISADO.docx",
+            "bytes": 5769,
+            "sha256": "94ab995b52604a8b2e0c3cb8c0b65279bb054fe49a889c182e0ad9aa7f8fc9b0"
+        },
+        {
+            "ruta": "docs/ACTA_PRUEBAS_ACEPTACION_EV02_REVISADO.pdf",
+            "bytes": 91940,
+            "sha256": "6de0ea8693f9435285e9739bf978733beff618aff1dd776da058d53ee8680e53"
+        },
+        {
+            "ruta": "docs/AMBIENTE_DESARROLLO_PRUEBAS.md",
+            "bytes": 3805,
+            "sha256": "f0f36c658a731042b9adb589178a415bbfc08c4807e463cc53339f69bf3b332d"
+        },
+        {
+            "ruta": "docs/CONTROL_VERSIONES.md",
+            "bytes": 2288,
+            "sha256": "1ec03a5e1925a03d266a91b2108741a5eac009e959131f490cb15b3c718c10f0"
+        },
+        {
+            "ruta": "docs/CRITERIOS_Y_PENDIENTES.md",
+            "bytes": 1612,
+            "sha256": "b273462c77e87cef425432376e5d156895d4f8c297ed1df5e1814ecbd601f836"
+        },
+        {
+            "ruta": "docs/DOCUMENTO_TECNICO_EV02_REVISADO.docx",
+            "bytes": 15708,
+            "sha256": "ef95c4049cd36001b0840cec450483a3a1fb6f8633f02b3637ddd7575549a14a"
+        },
+        {
+            "ruta": "docs/DOCUMENTO_TECNICO_EV02_REVISADO.pdf",
+            "bytes": 246892,
+            "sha256": "bf74ef2554a541ef05a973de3856700e6c779fbcd01588e25f5b722b7f1b77a0"
+        },
+        {
+            "ruta": "docs/MANUAL_TECNICO.md",
+            "bytes": 4821,
+            "sha256": "930c6a421bf91c7cbb268a3390d162315e719d7a62c2e36815fc1c7f7f774670"
+        },
+        {
+            "ruta": "docs/MATRIZ_PRUEBAS.csv",
+            "bytes": 15193,
+            "sha256": "ebd23d27b7f813deef8b506a17a4b6f609ce0d40982a4bf9e1e46907108f39bf"
+        },
+        {
+            "ruta": "docs/MATRIZ_PRUEBAS.md",
+            "bytes": 15428,
+            "sha256": "e6e53835a98c50faa72f9cd6a3454ebb9cc057061683512ffc634ce63f1647fb"
+        },
+        {
+            "ruta": "docs/MODULOS.md",
+            "bytes": 9510,
+            "sha256": "c49f71c61886571f420a439faff82354d84d36fc656e515f668e7601429515c0"
+        },
+        {
+            "ruta": "docs/VERIFICACION_REVISION.json",
+            "bytes": 18559,
+            "sha256": "fca316bb26f0d91d64958e63e74c0f248af524e141d407bf394de4ff7ca6a8ba"
+        },
+        {
+            "ruta": "docs/resultados/cierre.json",
+            "bytes": 151,
+            "sha256": "811f4296eb87c713878d48afdc215d6bb4014f2b51c85820bf9398368335280b"
+        },
+        {
+            "ruta": "docs/resultados/integracion.json",
+            "bytes": 7239,
+            "sha256": "14a3ca32728406e3a48617a8fb971baea0e374426b21536077f7177cf09de131"
+        },
+        {
+            "ruta": "docs/resultados/terminal_integracion.txt",
+            "bytes": 90,
+            "sha256": "9e8452175c6ff23db272998f477ce6279c424618dad3fcf9de4bb72bf603137e"
+        },
+        {
+            "ruta": "docs/resultados/terminal_unitarias.txt",
+            "bytes": 298,
+            "sha256": "f11b17a3cb75b87cd8dbee8786912335fe717e3e76935821403939b20374c81b"
+        },
+        {
+            "ruta": "docs/resultados/unitarias.xml",
+            "bytes": 10202,
+            "sha256": "c3242cb9f7f30c5908c7306a9864c196f2b39d974ccddf29660f21033e08e495"
+        },
+        {
+            "ruta": "evidencias/01_Control_Versiones_Git.png",
+            "bytes": 160319,
+            "sha256": "24905a9b33fc4d0fba0fbc7a93a1934f9fc8b69af9f019be7a4b838325ccd94a"
+        },
+        {
+            "ruta": "evidencias/02_Pruebas_Unitarias.png",
+            "bytes": 23644,
+            "sha256": "d202add333f2d26916dc5043abeeee8173ef893200697c1c36e5f87ef30a9635"
+        },
+        {
+            "ruta": "evidencias/03_Modulo_Ventas.png",
+            "bytes": 129505,
+            "sha256": "79f2f709bc353e54ea993045560bad8e466de2e815f36b5001afb117e89937c4"
+        },
+        {
+            "ruta": "evidencias/04_Buenas_Practicas.png",
+            "bytes": 146643,
+            "sha256": "1bfaad24e42f43530066fca9e647eaa7260823d58306d2913b760f6e93197b29"
+        },
+        {
+            "ruta": "includes/auth.php",
+            "bytes": 876,
+            "sha256": "579b5681a14d443f57f2ddf48147aa51e9df5552d40b6656fe45a30b609d8874"
+        },
+        {
+            "ruta": "includes/csrf.php",
+            "bytes": 695,
+            "sha256": "565154e7f6d468259eb07a07e3d217385cf9409f767a8697fc7909a5262b7b55"
+        },
+        {
+            "ruta": "includes/footer.php",
+            "bytes": 114,
+            "sha256": "bf1217a226b949dc951c1ddfab1e7d2a1dc19b9eeca1f07e9c5c8e171f524b4b"
+        },
+        {
+            "ruta": "includes/header.php",
+            "bytes": 1278,
+            "sha256": "15c5b4d1c55c77e3abcbf2e57a08934f79799a555a8049ae50e3e560a7b9a8bb"
+        },
+        {
+            "ruta": "includes/helpers.php",
+            "bytes": 330,
+            "sha256": "74ec3e592761ff7eddc415ad7e33822988eb56c9d3f30adf55c5d066d4caa995"
+        },
+        {
+            "ruta": "includes/reglas.php",
+            "bytes": 2604,
+            "sha256": "f13b7526502bca00745c708fee11258b856203202763f42932fa68026b90733d"
+        },
+        {
+            "ruta": "index.php",
+            "bytes": 137,
+            "sha256": "e0551d6780029cc71f7db4b81cc9eae5f95b468f428ff24eb6feba9d8a6ebcc0"
+        },
+        {
+            "ruta": "phpunit.xml",
+            "bytes": 310,
+            "sha256": "306a5efe2b1fac82e9905c289fc6257aad71987abff84211be83033869acc2e1"
+        },
+        {
+            "ruta": "public/clientes.php",
+            "bytes": 5617,
+            "sha256": "7c932258fc66264aa241af5f64f60c59cbbc5a5c131ab4dd42bc2f94a8651454"
+        },
+        {
+            "ruta": "public/compras.php",
+            "bytes": 5517,
+            "sha256": "c167f932af274f0443da58eed8d10529e1cb6ce869ee1570097a5854608487da"
+        },
+        {
+            "ruta": "public/css/style.css",
+            "bytes": 6349,
+            "sha256": "98e3267f3f71b2544eacd00612595619cc9fb8ba449b87463518a8993ea390bb"
+        },
+        {
+            "ruta": "public/dashboard.php",
+            "bytes": 3315,
+            "sha256": "c27b131191275ee8891345cb2e109d1d9fc4fd537c7656d5a1dbdd93c7f56005"
+        },
+        {
+            "ruta": "public/historial_ventas.php",
+            "bytes": 3719,
+            "sha256": "215e9089ff2f84f060320af7873fff0b71442ffc5d83824fa80ebfd5c5f9f504"
+        },
+        {
+            "ruta": "public/img/logo.png",
+            "bytes": 1024362,
+            "sha256": "1fa1e0cdecc558be427ad05b6d83e85933ba14e0b07a4cb295dd3f1ddb7b7fc7"
+        },
+        {
+            "ruta": "public/index.php",
+            "bytes": 1076,
+            "sha256": "95d5a3d584ba445630dc6004a8691498822c18fd70f7944ae7a688ee2c3227bc"
+        },
+        {
+            "ruta": "public/insumos.php",
+            "bytes": 4074,
+            "sha256": "16300c86a98a4f7d1b070ec1d26526e916d2eb4497559106ae9dcd5e5657da34"
+        },
+        {
+            "ruta": "public/inventario.php",
+            "bytes": 2641,
+            "sha256": "a2da196fd3862112ba9c383386bb7400c80cd86861c718b6c00fedebec91e288"
+        },
+        {
+            "ruta": "public/js/venta-total.js",
+            "bytes": 2780,
+            "sha256": "86e392adf4a9d2b45a7b59def97c6ca13ae8bdccb0eeb8fc2150032f25f5c474"
+        },
+        {
+            "ruta": "public/logout.php",
+            "bytes": 110,
+            "sha256": "5fef0296a40569eb47841e8dcdea7446097a39944ff95663b4c3e40b533e9a2a"
+        },
+        {
+            "ruta": "public/productos.php",
+            "bytes": 6780,
+            "sha256": "f36e6bcde9ae25cdf763a03df036612911d545376e980070b076f654c96d27d6"
+        },
+        {
+            "ruta": "public/recetas.php",
+            "bytes": 4094,
+            "sha256": "a251254429c01b692fed349b1fc5fb5dacaa03510a57417a3bbb6fc2f5603878"
+        },
+        {
+            "ruta": "public/reportes.php",
+            "bytes": 2891,
+            "sha256": "92b0aee7ba78e68663f4dc8d0b2171ca5effc95b624a3c3ef5dfe5f68fa9eb10"
+        },
+        {
+            "ruta": "public/ventas.php",
+            "bytes": 2977,
+            "sha256": "9ff4c182efba0c79b8123d4cbe5362db5ddf6fe4854b827076a233b35840afcb"
+        },
+        {
+            "ruta": "scripts/probar.ps1",
+            "bytes": 1448,
+            "sha256": "397dbc4fc41b685a3e069ce6eb395c9c721470fb4da4f5f4228d595589f083f3"
+        },
+        {
+            "ruta": "scripts/router.php",
+            "bytes": 914,
+            "sha256": "dece55f4e36663acc3b0e79f1ed7795d0d6af87c65a24b1daeadbaf5ff9594c9"
+        },
+        {
+            "ruta": "sql/schema.sql",
+            "bytes": 6977,
+            "sha256": "870d51cae416e3ba75329dc9dcc2b43b56c6f7c9497bc6919a37fc4067db3cf6"
+        },
+        {
+            "ruta": "tests/Integration/ejecutar.cjs",
+            "bytes": 15956,
+            "sha256": "2531d8c0d4594d677f6df776f1b68732feae1932cbc4b58bf210dd315de7badc"
+        },
+        {
+            "ruta": "tests/Unit/AutorizacionTest.php",
+            "bytes": 884,
+            "sha256": "3571eeafa449bce8776c52079772bbe7e3404bb7fe707eb814685a4bb55b7bb8"
+        },
+        {
+            "ruta": "tests/Unit/CsrfTest.php",
+            "bytes": 1108,
+            "sha256": "ec16a9a7cc60d746356d21d9e9785189426b5bdf21a61b3748559a04799e8b09"
+        },
+        {
+            "ruta": "tests/Unit/ReglasVentaTest.php",
+            "bytes": 2585,
+            "sha256": "5dd667c653387729ebd13ca56e171545a85ce8d5bb24e71d1f9c60da82efe386"
+        },
+        {
+            "ruta": "tests/bootstrap.php",
+            "bytes": 170,
+            "sha256": "04629512a417a5abe0c436809679120f2896e1692e50a7b5f820b2ddc3c556d0"
+        }
+    ],
+    "adaptacionRepositorio": "Solo .gitignore y .gitattributes se ajustaron para el repositorio local; este manifiesto y SHA256_ENTREGA.txt reflejan sus nuevos hashes. Codigo, pruebas, resultados y documentos conservados."
+}

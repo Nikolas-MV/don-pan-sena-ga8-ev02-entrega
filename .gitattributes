@@ -1,0 +1,5 @@
+# Conservar los bytes de codigo, documentos y resultados entregados.
+* -text
+*.png binary
+*.pdf binary
+*.docx binary
